@@ -3,9 +3,9 @@
 
 ## Tech Stack
 - **Frontend**: React
-- **Backend**: FastAPI (located in `/api`)
+- **Backend**: FastAPI
 - **Deployment**:
-  - Backend: [Heroku](https://patient-feedback-backend-9e3b0b5a10ed.herokuapp.com)
+  - Backend: [Heroku](https://chatbot-2024-90539106da8b.herokuapp.com/)
   - Frontend: TBD
 
 
@@ -17,7 +17,7 @@ This is the main endpoint that receives user feedback and returns assistant resp
 
 **Example:**
 ```bash
-curl -X POST https://patient-feedback-backend-9e3b0b5a10ed.herokuapp.com/chatbot/ \
+curl -X POST https://chatbot-2024-90539106da8b.herokuapp.com/chatbot/ \
      -H "Content-Type: application/json" \
      -d '{"message": "1006. Treatment: Physical Therapy. Feedback: Excellent sessions but waiting times were too long."}'
 ```
@@ -30,26 +30,6 @@ Response:
 }
 ```
 
-## Project Structure
-```
-feedback-management/
-├── api/                    # FastAPI backend application
-│   ├── main.py             # Entry point for the backend server
-│   ├── requirements.txt    # Backend dependencies
-│   └── ...                 # Other backend-related files
-│
-├── src/                    # React frontend source code
-│   ├── components/         # Reusable UI components
-│   ├── pages/              # React pages/views
-│   ├── App.js              # Main app component
-│   └── index.js            # Entry point for React
-│
-├── public/                 # Static files for React (e.g., index.html)
-├── package.json            # Frontend dependencies and scripts
-├── README.md               # Project documentation
-└── ...                     # Other configuration files
-
-```
 
 
 
@@ -110,7 +90,7 @@ These functions collectively enable patient feedback extraction, analysis, stora
 Frontend:
 
 ```bash
-npm run dev
+npm start
 ```
 
 Backend:
